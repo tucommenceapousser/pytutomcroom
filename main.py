@@ -39,7 +39,7 @@ def ask_gpt4(question):
             {"role": "system", "content": "You are a helpful assistant."},  # Contexte global du chatbot
             {"role": "user", "content": prompt}  # La question posée par l'utilisateur
         ],
-        max_tokens=200,
+        max_tokens=500,
         n=1,
         stop=None,
         temperature=0.7
