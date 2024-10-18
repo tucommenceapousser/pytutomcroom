@@ -10,6 +10,11 @@
         .container { margin: 50px auto; width: 60%; }
         .chatbox { background-color: #333; padding: 20px; border-radius: 10px; }
         .response { color: #00ff00; margin-top: 10px; }
+        .info-section { margin-top: 30px; background-color: #444; padding: 20px; border-radius: 10px; }
+        .info-section h2 { color: #00ff00; }
+        .info-section p, .info-section ul { color: #fff; line-height: 1.6; }
+        .info-section ul { margin-left: 20px; }
+        .icon { margin-right: 5px; }
     </style>
 </head>
 <body>
@@ -26,6 +31,37 @@
             <div class="response"><strong>Réponse:</strong> {{ response }}</div>
         </div>
         {% endif %}
+        
+        <!-- Section d'information sur le chatbot -->
+        <div class="info-section">
+            <h2><i class="icon fas fa-comments"></i>Qu'est-ce que ce chatbot ?</h2>
+            <p>
+                Ce chatbot est conçu pour vous aider à naviguer dans la gestion et la configuration de votre site WordPress. 
+                Que vous soyez un débutant ou un utilisateur avancé, notre assistant intelligent est là pour répondre à vos questions.
+            </p>
+            <h2><i class="icon fas fa-cogs"></i>Comment ça fonctionne ?</h2>
+            <p>
+                En utilisant la puissance de GPT-4, notre chatbot peut comprendre vos questions et fournir des réponses détaillées concernant :
+            </p>
+            <ul>
+                <li>La configuration de votre site WordPress.</li>
+                <li>Les thèmes et les personnalisations.</li>
+                <li>Les plugins, y compris WooCommerce et WooPayments.</li>
+                <li>Les meilleures pratiques pour la gestion de contenu.</li>
+            </ul>
+            <h2><i class="icon fas fa-lightbulb"></i>Pourquoi utiliser notre chatbot ?</h2>
+            <p>
+                Avec une interface simple et intuitive, vous pouvez poser vos questions directement et obtenir des réponses immédiates. 
+                Plus besoin de passer des heures à chercher des solutions sur Internet !
+            </p>
+            <h2><i class="icon fas fa-user-check"></i>Accéder au chatbot</h2>
+            <p>
+                Pour commencer à utiliser le chatbot, posez simplement votre question dans le champ dédié. 
+                Que ce soit sur la façon de changer une image de fond ou sur la gestion des commandes WooCommerce, 
+                notre assistant est prêt à vous aider.
+            </p>
+        </div>
+
         <!-- Ajout du lien pour aller à la page de tutoriel -->
         <div style="margin-top: 20px;">
             <a href="{{ url_for('tutorial') }}" style="color: #00ff00;">Voir le tutoriel</a>
